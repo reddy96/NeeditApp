@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="new_feild_1" label="New Feild 1" language="en" table="x_270375_needitapp_needit">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>new_feild_1</element>
+            <help/>
+            <hint/>
+            <label>New Feild 1</label>
+            <language>en</language>
+            <name>x_270375_needitapp_needit</name>
+            <plural>New Feild 1s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-09-10 05:13:54</sys_created_on>
+            <sys_id>75b1470c4f6ca300feceb5e18110c779</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>New Feild 1</sys_name>
+            <sys_package display_value="NeeditApp" source="x_270375_needitapp">2550d2374fd0a300feceb5e18110c7f5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NeeditApp">2550d2374fd0a300feceb5e18110c7f5</sys_scope>
+            <sys_update_name>sys_documentation_x_270375_needitapp_needit_new_feild_1_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-10 05:13:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

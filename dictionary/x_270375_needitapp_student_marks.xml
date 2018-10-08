@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="student marks" max_length="40" name="x_270375_needitapp_student_marks" type="collection">
+        <element label="date" max_length="40" name="date" type="glide_date"/>
+        <element label="exam" max_length="40" name="exam" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="points" max_length="40" name="points" type="integer"/>
+    </element>
+</database>

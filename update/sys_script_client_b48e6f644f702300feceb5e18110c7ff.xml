@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>test1</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	//Type appropriate comment here, and begin script below
+	var startdate = g_form.getValue('on_date').split(' ')[0];
+	var enddate = g_form.getValue('end_date').split(' ')[0];
+	
+	// start date
+	var tempStartDate = startdate.split('/');
+	var temp = tempStartDate[1];
+	tempStartDate[1] = tempStartDate[0];
+	tempStartDate[0] = temp;
+	startdate = new Date(tempStartDate.join('/'));
+	
+	// end date
+	var tempEndDate = enddate.split('/');
+	var tempEnd = tempEndDate[1];
+	tempEndDate[1] = tempEndDate[0];
+	tempEndDate[0] = tempEnd;
+	enddate = new Date(tempEndDate.join('/'));
+	
+	
+
+	if(enddate < startdate){
+		g_form.addErrorMessage("Prior date");
+		return false;
+		
+	}
+  var timeDiff = Math.abs(startdate - enddate);
+	var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+	alert(diffDays);
+}
+  ]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-24 08:10:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b48e6f644f702300feceb5e18110c7ff</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>test1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeeditApp" source="x_270375_needitapp">2550d2374fd0a300feceb5e18110c7f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeeditApp">2550d2374fd0a300feceb5e18110c7f5</sys_scope>
+        <sys_update_name>sys_script_client_b48e6f644f702300feceb5e18110c7ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-24 10:55:16</sys_updated_on>
+        <table>x_270375_needitapp_needit</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

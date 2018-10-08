@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Exam Result" max_length="40" name="x_270375_needitapp_exam_result" type="collection">
+        <element attributes="import_attribute_name=Date,edge_encryption_enabled=true" label="Date" max_length="40" name="u_date" type="string"/>
+        <element attributes="import_attribute_name=Exam Name,edge_encryption_enabled=true" label="Exam Name" max_length="40" name="u_exam_name" type="string"/>
+        <element attributes="import_attribute_name=Points" label="Points" max_length="40" name="u_points" type="integer"/>
+        <element attributes="import_attribute_name=Student Name,edge_encryption_enabled=true" label="Student Name" max_length="40" name="u_student_name" type="string"/>
+    </element>
+</database>

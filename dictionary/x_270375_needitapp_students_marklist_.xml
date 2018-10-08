@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Students Marklist " max_length="40" name="x_270375_needitapp_students_marklist_" type="collection">
+        <element attributes="import_attribute_name=A,edge_encryption_enabled=true" label="A" max_length="40" name="u_a" type="string"/>
+        <element attributes="import_attribute_name=B,edge_encryption_enabled=true" label="B" max_length="40" name="u_b" type="string"/>
+        <element attributes="import_attribute_name=C,edge_encryption_enabled=true" label="C" max_length="40" name="u_c" type="string"/>
+        <element attributes="import_attribute_name=D,edge_encryption_enabled=true" label="D" max_length="40" name="u_d" type="string"/>
+        <element attributes="import_attribute_name=E,edge_encryption_enabled=true" label="E" max_length="40" name="u_e" type="string"/>
+    </element>
+</database>

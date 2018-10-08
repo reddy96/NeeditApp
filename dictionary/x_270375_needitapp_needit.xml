@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Needit" max_length="40" name="x_270375_needitapp_needit" sizeclass="33" type="collection">
+        <element label="Date/Time" mandatory="true" max_length="40" name="date_time" type="glide_date_time"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date_time"/>
+        <element label="New Feild 1" max_length="40" name="new_feild_1" type="integer"/>
+        <element label="New Field 2" max_length="40" name="new_field_2" type="integer"/>
+        <element label="Start  Date" max_length="40" name="on_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Resource" max_length="40" name="resource" type="string"/>
+        <element label="Sample" max_length="40" name="sample" type="string"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Facilites" sequence="0" value="facilites"/>
+                <element inactive_on_update="false" label="Human Resources" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Legal" sequence="1" value="legal"/>
+            </choice>
+        </element>
+        <element choice="1" dependent="u_request_type" dependent_on_field="u_request_type" label="what needed" max_length="40" name="what_needed" type="choice" use_dependent_field="true">
+            <choice/>
+        </element>
+    </element>
+</database>
